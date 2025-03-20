@@ -1,0 +1,30 @@
+
+ ██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
+██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
+██║     ██║   ██║██║  ██║█████╗  ██║   ██║██║   ██║█████╗  ███████╗   ██║   
+██║     ██║   ██║██║  ██║██╔══╝  ██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   
+╚██████╗╚██████╔╝██████╔╝███████╗╚██████╔╝╚██████╔╝███████╗███████║   ██║   
+ ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝   
+                                                                            
+
+===============================================
+         Welcome to CODE QUEST!
+===============================================
+
+Rules:
+  1. Do not share flags with others.
+  2. Teams must consist of 2 players.
+  3. Use only the provided tools and hints.
+  4. Follow the challenge guidelines strictly.
+  5. Most importantly, have fun and think creatively!
+
+-----------------------------------------------
+Current Challenge: Aladdin's Cave of Base64 Wonders!
+Your task is to decode the repeatedly Base64-encoded text 
+in 'magic_word.txt' to reveal the Genie's secret name.
+Hint: The truth lies beneath many layers of encoding.
+-----------------------------------------------
+
+Good luck, and let your quest begin!
+===============================================
+
