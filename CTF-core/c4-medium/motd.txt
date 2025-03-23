@@ -19,12 +19,19 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
------------------------------------------------
+Current Challenge: Cracking Tom's Trap Code (Reverse Engineering)
+Category: Reverse Engineering
+Difficulty: Medium
 
-Good luck, and let your quest begin!
+Description:
+Tom has set a cunning password within his mouse trap to catch Jerry.
+However, his code isn’t well-documented, and the password is hidden in the binary.
+Your mission is to analyze the program’s execution flow using debugging tools,
+and determine the correct password to disable the trap once and for all.
+
+Challenge File:
+- mouse_trap_code (Tom's binary trap that requires the correct password to unlock)
 ===============================================
+
+
 

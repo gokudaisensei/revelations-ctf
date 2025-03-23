@@ -19,12 +19,14 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
+Current Challenge: Spongebob's Chum Bucket Rotation Code!
+Your task is to decode the encrypted text in the file "theRotator.txt".
+It appears to be encrypted using a simple rotation cipher.
+Hint: Look up the usage of the Linux command 'tr' with the appropriate arguments to decode the text and reveal the flag.
 -----------------------------------------------
 
 Good luck, and let your quest begin!
 ===============================================
+
+
 

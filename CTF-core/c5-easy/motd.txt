@@ -19,12 +19,25 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
------------------------------------------------
+Current Challenge: The Format String Funhouse (Binary Exploitation)
+Category: Binary Exploitation
+Difficulty: Medium
 
-Good luck, and let your quest begin!
+Description:
+Jerry has tampered with Tom's cheese catalog printer by injecting a format string vulnerability.
+Your challenge is to craft an input that exploits this vulnerability and reveals the hidden flag
+buried within the program’s output. The program is vulnerable because it directly prints your input
+as a format string.
+
+Challenge File:
+- format_funhouse (A compiled binary that prints user input using a vulnerable printf)
+
+Solution Hint:
+- Try entering format specifiers like %x or %s.
+- Use debugging tools (e.g., GDB) if needed to inspect memory.
+- Experiment with payloads until the flag (in the format FLAG{...}) is revealed.
+
+Good luck, and may your exploitation skills triumph!
 ===============================================
+
 

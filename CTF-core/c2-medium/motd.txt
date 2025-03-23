@@ -19,12 +19,21 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
+Current Challenge: Vigenere Cipher – Secret Communications
+Theme Inspiration: Secure communications, secret codes, and agent mysteries
+Difficulty: Medium
+
+Description:
+An old colleague secured sensitive communications using a Vigenère cipher. To add further security,
+extraneous characters were inserted at the beginning and end of the encrypted message.
+
+Goal:
+Decrypt the file "encrypted_file.txt" to reveal the secret communication password.
+(Flag: A string in the format FLAG{...})
 -----------------------------------------------
 
 Good luck, and let your quest begin!
 ===============================================
+
+
 

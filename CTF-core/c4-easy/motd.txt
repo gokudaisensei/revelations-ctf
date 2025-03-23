@@ -19,12 +19,20 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
------------------------------------------------
+Current Challenge: Strings of Sausage (Reverse Engineering)
+Category: Reverse Engineering
+Difficulty: Easy
 
-Good luck, and let your quest begin!
+Description:
+Tom has hidden a glorious sausage in a binary file – a cheeky nod to his culinary misadventures.
+Although the binary is partially obfuscated, it contains constant strings that hint at a secret flag.
+Your mission is to extract these strings using basic reverse engineering techniques.
+
+Challenge File:
+- hide_a_sausage (A binary that conceals its secret among obfuscated string sequences)
+
+Good luck, and happy reversing!
 ===============================================
+
+
 

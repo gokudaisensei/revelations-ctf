@@ -18,13 +18,27 @@ Rules:
   4. Follow the challenge guidelines strictly.
   5. Most importantly, have fun and think creatively!
 
------------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
------------------------------------------------
+Current Challenge: The Shell Escape (Binary Exploitation)
+Category: Binary Exploitation
+Difficulty: Medium
 
-Good luck, and let your quest begin!
+Description:
+Jerry has discovered a buffer overflow vulnerability in Tom's mousetrap program.
+This vulnerability allows you to overflow a limited input buffer and overwrite the
+return address, redirecting execution to a hidden function that spawns a shell.
+Your mission is to craft an exploit payload that redirects execution to that secret
+shell function, thereby revealing the flag stored in a protected directory.
+
+Challenge File:
+- passcodeshell (A vulnerable binary that accepts user input)
+
+Solution Hint:
+- Analyze the binary using a debugger (e.g., GDB) to determine the buffer size and the offset to the return address.
+- Look for the function named 'secret_shell' (or similar) in the binary.
+- Create an exploit payload that overflows the buffer (64 bytes) and overwrites the return address with the address of the secret shell function.
+- Tools like pwntools or Python scripts can help automate the exploitation.
+
+Good luck, and may your exploitation skills prevail!
 ===============================================
+
 

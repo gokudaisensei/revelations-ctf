@@ -18,13 +18,13 @@ Rules:
   4. Follow the challenge guidelines strictly.
   5. Most importantly, have fun and think creatively!
 
------------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
------------------------------------------------
+---------------------------------------------------
+Current Challenge: Mr. Bean's Teddy's Hidden Message!
+Your task is to extract the secret message scrawled on Mr. Bean's Teddy.
+The text is smudged—perhaps even altered by Shinchan's mischievous doodles.
+Adjust light levels, color contrasts, and other image parameters to reveal
+the hidden text that holds the secret of Teddy's creation.
+---------------------------------------------------
 
 Good luck, and let your quest begin!
-===============================================
-
+===================================================

@@ -1,35 +1,32 @@
-# Use a minimal Debian base image for security
-FROM debian:latest
+# Use a minimal Alpine base image for security
+FROM alpine:latest
 
-# Security: Disable interactive prompts
-ENV DEBIAN_FRONTEND=noninteractive
+# Set environment variable to avoid caching (optional)
+ENV ALPINE_NO_CACHE=true
 
-# Create a non-root user for running challenges
-RUN useradd -m -s /bin/bash ctfuser && \
-    echo 'ctfuser:password123' | chpasswd && \
+# Create a non-root user for running challenges and set password
+RUN adduser -D -s /bin/sh ctfuser && \
+    echo "ctfuser:password123" | chpasswd && \
     mkdir -p /challenge && \
     chown -R ctfuser:ctfuser /challenge
 
-# Install only necessary utilities
-RUN apt-get update && apt-get install -y \
-    coreutils \
-    netcat-openbsd \
-    binutils \
-    openssh-server \
-    && rm -rf /var/lib/apt/lists/*
+# Install only necessary utilities: coreutils, netcat-openbsd, binutils, and openssh
+RUN apk update && \
+    apk add --no-cache coreutils netcat-openbsd binutils openssh && \
+    rm -rf /var/cache/apk/*
 
-# Security: Configure SSH for password authentication
+# Configure SSH:
+# Create the SSH runtime directory and update the sshd_config for secure password authentication
 RUN mkdir -p /var/run/sshd && \
     echo "PermitRootLogin no" >> /etc/ssh/sshd_config && \
     echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config && \
     echo "AllowUsers ctfuser" >> /etc/ssh/sshd_config
 
 # Generate SSH host keys so that sshd can start without errors
-RUN /usr/bin/ssh-keygen -A
+RUN ssh-keygen -A
 
 # Expose SSH port
 EXPOSE 22
 
 # Start SSH service in the foreground
 CMD ["/usr/sbin/sshd", "-D"]
-

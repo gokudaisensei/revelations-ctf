@@ -1,23 +1,25 @@
-# Use your provided secure base image (ctf-base)
+# Use your provided secure Alpine-based base image (ctf-base-alpine)
 FROM ctf-base
 
-# Switch to root to copy challenge files and set up host keys if needed
+# Switch to root to install additional packages and copy challenge files
 USER root
+
+# Install bash and su-exec (Alpine's lightweight alternative to gosu)
+RUN apk add --no-cache bash su-exec
 
 # Copy the challenge generation script into the home directory
 COPY generate_magic.sh /home/ctfuser/generate_magic.sh
 RUN chown ctfuser:ctfuser /home/ctfuser/generate_magic.sh && chmod +x /home/ctfuser/generate_magic.sh
 
-# Copy the MOTD file to a non-standard location so that it isn't immediately visible
+# Copy the MOTD file to a non-standard location (we'll use it to update /etc/motd)
 COPY motd.txt /opt/ctf/motd.txt
 RUN chown ctfuser:ctfuser /opt/ctf/motd.txt && chmod 644 /opt/ctf/motd.txt
 
-# Append a command to the user's .bashrc to display the hidden MOTD on login
-RUN echo "\n# Display CODE QUEST MOTD on login from hidden location\nif [ -f /opt/ctf/motd.txt ]; then\n  cat /opt/ctf/motd.txt\nfi\n" >> /home/ctfuser/.bashrc
+# Overwrite /etc/motd with our MOTD contents
+RUN cp /opt/ctf/motd.txt /etc/motd
 
-# Set working directory
+# Set working directory to the non-root user's home directory
 WORKDIR /home/ctfuser
 
-# Use runuser to execute the generation script as ctfuser, then start sshd as root.
-ENTRYPOINT ["/bin/bash", "-c", "runuser -l ctfuser -c 'if [ -f /home/ctfuser/generate_magic.sh ]; then /home/ctfuser/generate_magic.sh; fi'; exec /usr/sbin/sshd -D"]
-
+# Use su-exec to run the generation script as ctfuser, then switch back to root to launch sshd
+ENTRYPOINT ["/bin/bash", "-c", "su-exec ctfuser /home/ctfuser/generate_magic.sh; exec /usr/sbin/sshd -D"]

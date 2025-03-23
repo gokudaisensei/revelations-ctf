@@ -1,0 +1,41 @@
+# Use a minimal Debian base image for security
+FROM debian:latest
+
+# Disable interactive prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Create a non-root user for running challenges and set password
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      passwd \
+      && \
+    useradd -m -s /bin/bash ctfuser && \
+    echo "ctfuser:password123" | chpasswd && \
+    mkdir -p /challenge && \
+    chown -R ctfuser:ctfuser /challenge && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install only necessary utilities: coreutils, netcat-openbsd, binutils, and openssh-server
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      coreutils \
+      netcat-openbsd \
+      binutils \
+      openssh-server && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Configure SSH:
+# Create the SSH runtime directory and update sshd_config for secure password authentication
+RUN mkdir -p /var/run/sshd && \
+    echo "PermitRootLogin no" >> /etc/ssh/sshd_config && \
+    echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config && \
+    echo "AllowUsers ctfuser" >> /etc/ssh/sshd_config
+
+# Generate SSH host keys so that sshd can start without errors
+RUN ssh-keygen -A
+
+# Expose SSH port
+EXPOSE 22
+
+# Start SSH service in the foreground so users can SSH in and solve challenges
+CMD ["/usr/sbin/sshd", "-D"]
