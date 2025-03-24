@@ -1,11 +1,9 @@
-
- ██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
+██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
 ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
 ██║     ██║   ██║██║  ██║█████╗  ██║   ██║██║   ██║█████╗  ███████╗   ██║   
 ██║     ██║   ██║██║  ██║██╔══╝  ██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   
 ╚██████╗╚██████╔╝██████╔╝███████╗╚██████╔╝╚██████╔╝███████╗███████║   ██║   
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝   
-                                                                            
 
 ===============================================
          Welcome to CODE QUEST!
@@ -19,14 +17,15 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Spongebob's Chum Bucket Rotation Code!
-Your task is to decode the encrypted text in the file "theRotator.txt".
-It appears to be encrypted using a simple rotation cipher.
-Hint: Look up the usage of the Linux command 'tr' with the appropriate arguments to decode the text and reveal the flag.
------------------------------------------------
+Current Challenge: Rotisserie Recipe Robbery (Cryptography)
+Description:
+Jerry has pulled off another mischief! He’s taken Tom’s cherished recipe for Rotisserie Roasted Rat 
+and scrambled it using a classic ROT13 cipher. Now, Tom’s left with a culinary calamity. 
+Your mission is to reverse the ROT13 encryption and recover the secret recipe – or at least, 
+reveal the true flag hidden in the text.
 
+Challenge File:
+  - secret_recipe.txt (A ROT13-obfuscated text file)
+-----------------------------------------------
 Good luck, and let your quest begin!
 ===============================================
-
-
-

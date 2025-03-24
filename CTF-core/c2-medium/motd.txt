@@ -1,11 +1,9 @@
-
- ██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
+██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
 ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
 ██║     ██║   ██║██║  ██║█████╗  ██║   ██║██║   ██║█████╗  ███████╗   ██║   
 ██║     ██║   ██║██║  ██║██╔══╝  ██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   
 ╚██████╗╚██████╔╝██████╔╝███████╗╚██████╔╝╚██████╔╝███████╗███████║   ██║   
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝   
-                                                                            
 
 ===============================================
          Welcome to CODE QUEST!
@@ -19,21 +17,16 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Vigenere Cipher – Secret Communications
-Theme Inspiration: Secure communications, secret codes, and agent mysteries
-Difficulty: Medium
-
+Current Challenge: Bulldog Biscuit Bonanza (Cryptography)
 Description:
-An old colleague secured sensitive communications using a Vigenère cipher. To add further security,
-extraneous characters were inserted at the beginning and end of the encrypted message.
+Spike, the slobbering bulldog, is guarding a mountain of dog biscuits – the Biscuit Fortress™!
+But Jerry’s cunning: he encrypted the biscuit vault’s access code with a Vigenère cipher.
+Luckily, Tom left subtle clues (crumbs) that hint at the key. Your challenge is to analyze
+the ciphertext, deduce the Vigenère keyword, and decrypt the file to reveal the secret cookie combo.
 
-Goal:
-Decrypt the file "encrypted_file.txt" to reveal the secret communication password.
-(Flag: A string in the format FLAG{...})
+Challenge File:
+  - cookie_vault.txt (A file encrypted with a Vigenère cipher)
+  - vig_decrypt (program to decrypt Vigenère ciphers)
 -----------------------------------------------
-
 Good luck, and let your quest begin!
 ===============================================
-
-
-

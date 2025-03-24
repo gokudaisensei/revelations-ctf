@@ -1,11 +1,9 @@
-
- ██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
+██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
 ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
 ██║     ██║   ██║██║  ██║█████╗  ██║   ██║██║   ██║█████╗  ███████╗   ██║   
 ██║     ██║   ██║██║  ██║██╔══╝  ██║▄▄ ██║██║   ██║██╔══╝  ╚════██║   ██║   
 ╚██████╗╚██████╔╝██████╔╝███████╗╚██████╔╝╚██████╔╝███████╗███████║   ██║   
  ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚══▀▀═╝  ╚═════╝ ╚══════╝╚══════╝   ╚═╝   
-                                                                            
 
 ===============================================
          Welcome to CODE QUEST!
@@ -18,13 +16,17 @@ Rules:
   4. Follow the challenge guidelines strictly.
   5. Most importantly, have fun and think creatively!
 
----------------------------------------------------
-Current Challenge: Mr. Bean's Teddy's Hidden Message!
-Your task is to extract the secret message scrawled on Mr. Bean's Teddy.
-The text is smudged—perhaps even altered by Shinchan's mischievous doodles.
-Adjust light levels, color contrasts, and other image parameters to reveal
-the hidden text that holds the secret of Teddy's creation.
----------------------------------------------------
+-----------------------------------------------
+Current Challenge: Blueprint Blunder (General Skills)
+Description:
+Tom’s in trouble – he accidentally swallowed Jerry again! Now the vet needs a clear X-ray to figure out what’s really inside that cat’s stomach. 
+But, oh no – Jerry swapped the real X-ray film with a blurry doodle before the vet could use it! 
+Your mission is to use your tech wizardry to sharpen that X-ray image and reveal the hidden details. 
+Only when the image is properly adjusted will the flag emerge, exposing the real problem brewing in Tom’s belly.
+
+Challenge File:
+  - xray.png (A blurry image of Tom's insides, potentially featuring a mischievous mouse)
+-----------------------------------------------
 
 Good luck, and let your quest begin!
-===================================================
+===============================================

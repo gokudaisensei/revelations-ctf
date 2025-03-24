@@ -1,4 +1,3 @@
-
  ██████╗ ██████╗ ██████╗ ███████╗ ██████╗ ██╗   ██╗███████╗███████╗████████╗
 ██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝
 ██║     ██║   ██║██║  ██║█████╗  ██║   ██║██║   ██║█████╗  ███████╗   ██║   
@@ -19,12 +18,11 @@ Rules:
   5. Most importantly, have fun and think creatively!
 
 -----------------------------------------------
-Current Challenge: Aladdin's Cave of Base64 Wonders!
-Your mission is to decode the repeatedly Base64-encoded message 
-hidden in 'magic_word.txt' to reveal the Genie's secret name.
-Hint: The truth lies beneath many layers of encoding.
+Current Challenge: Triple-Wrapped Cheese-nigma (General Skills)
+Jerry’s locked away the “Special Reserve Cheddar” under layers of Base64 encryption – think of it as a cheesy Russian nesting doll! 
+Tom desperately needs that cheese to set his latest trap. Your task is to peel away the layers of Base64 encoding and release the cheese-scented secret. 
+Every decoding step brings you closer to unleashing the ultimate cheese flavor ranking.
 -----------------------------------------------
 
 Good luck, and let your quest begin!
 ===============================================
-

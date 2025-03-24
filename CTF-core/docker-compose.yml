@@ -1,52 +1,62 @@
 services:
   c1-easy:
-    image: c1-easy:latest
+    build:
+      context: ./c1-easy
     ports:
       - "${C1_EASY_SSH}:22"
 
   c1-medium:
-    image: c1-medium:latest
+    build:
+      context: ./c1-medium
     ports:
       - "${C1_MEDIUM_SSH}:22"
 
   c2-easy:
-    image: c2-easy:latest
+    build:
+      context: ./c2-easy
     ports:
       - "${C2_EASY_SSH}:22"
 
   c2-medium:
-    image: c2-medium:latest
+    build:
+      context: ./c2-medium
     ports:
       - "${C2_MEDIUM_SSH}:22"
 
   # c3-easy is a web exploitation challenge
   c3-easy:
-    image: c3-easy:latest
+    build:
+      context: ./c3-easy
     ports:
       - "${C3_EASY_HTTP}:8000"
 
   # c3-medium is also a web exploitation challenge
   c3-medium:
-    image: c3-medium:latest
+    build:
+      context: ./c3-medium
     ports:
       - "${C3_MEDIUM_HTTP}:8000"
 
   c4-easy:
-    image: c4-easy:latest
+    build:
+      context: ./c4-easy
     ports:
       - "${C4_EASY_SSH}:22"
 
   c4-medium:
-    image: c4-medium:latest
+    build:
+      context: ./c4-medium
     ports:
       - "${C4_MEDIUM_SSH}:22"
 
   c5-easy:
-    image: c5-easy:latest
+    build:
+      context: ./c5-easy
     ports:
       - "${C5_EASY_SSH}:22"
 
   c5-medium:
-    image: c5-medium:latest
+    build:
+      context: ./c5-medium
     ports:
       - "${C5_MEDIUM_SSH}:22"

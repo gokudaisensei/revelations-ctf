@@ -5,8 +5,8 @@ FROM ctf-base
 USER root
 
 # Copy the ROT13 challenge file into the /home/ctfuser directory
-COPY theRotator.txt /home/ctfuser/theRotator.txt
-RUN chown ctfuser:ctfuser /home/ctfuser/theRotator.txt && chmod 644 /home/ctfuser/theRotator.txt
+COPY secret_recipe.txt /home/ctfuser/secret_recipe.txt
+RUN chown ctfuser:ctfuser /home/ctfuser/secret_recipe.txt && chmod 644 /home/ctfuser/secret_recipe.txt
 
 # Copy the MOTD file (with challenge instructions) into the home directory
 COPY motd.txt /opt/ctf/motd.txt

@@ -11,8 +11,8 @@ for ((i = 1; i <= ENCODE_COUNT; i++)); do
   ENCODED_TEXT=$(echo -n "$ENCODED_TEXT" | base64)
 done
 
-# Write the encoded text to magic_word.txt in the home directory
-echo "$ENCODED_TEXT" >/home/ctfuser/magic_word.txt
+# Write the encoded text to cheese_lock.txt in the home directory
+echo "$ENCODED_TEXT" >/home/ctfuser/cheese_lock.txt
 
 # Write a riddle to riddle.txt
 echo "The word has been whispered by the cave's echoes exactly $ENCODE_COUNT times. Solve for $ENCODE_COUNT to reveal its true form." >/home/ctfuser/riddle.txt

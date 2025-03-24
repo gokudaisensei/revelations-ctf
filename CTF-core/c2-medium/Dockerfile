@@ -16,8 +16,8 @@ RUN gcc -o /home/ctfuser/vig_decrypt /home/ctfuser/vig_decrypt.c && \
     rm -f /home/ctfuser/vig_decrypt.c
 
 # Copy the encrypted challenge file into the home directory
-COPY encrypted_file.txt /home/ctfuser/encrypted_file.txt
-RUN chown ctfuser:ctfuser /home/ctfuser/encrypted_file.txt && chmod 644 /home/ctfuser/encrypted_file.txt
+COPY cookie_vault.txt /home/ctfuser/cookie_vault.txt
+RUN chown ctfuser:ctfuser /home/ctfuser/cookie_vault.txt && chmod 644 /home/ctfuser/cookie_vault.txt
 
 # Copy the MOTD file into the /opt/ctf directory (non-standard location)
 COPY motd.txt /opt/ctf/motd.txt

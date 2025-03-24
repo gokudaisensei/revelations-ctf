@@ -10,8 +10,8 @@ RUN apk update && \
     rm -rf /var/cache/apk/*
 
 # Copy the challenge image file into the home directory of ctfuser
-COPY image.png /home/ctfuser/image.png
-RUN chown ctfuser:ctfuser /home/ctfuser/image.png && chmod 644 /home/ctfuser/image.png
+COPY xray.png /home/ctfuser/xray.png
+RUN chown ctfuser:ctfuser /home/ctfuser/xray.png && chmod 644 /home/ctfuser/xray.png
 
 # Copy the MOTD file into a non-standard location (here, /opt/ctf/)
 COPY motd.txt /opt/ctf/motd.txt
