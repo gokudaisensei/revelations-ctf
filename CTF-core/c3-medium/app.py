@@ -2,7 +2,7 @@ from flask import Flask, request, make_response, render_template
 
 app = Flask(__name__)
 
-FLAG = "FLAG{COOKIE_CORRUPTION_SUCCESS}"
+FLAG = "FLAG{COOKIE_SYSTEM_COMPROMISED}"
 
 
 @app.route("/")

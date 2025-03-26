@@ -6,7 +6,8 @@ USER root
 
 # Install build-essential (Debian equivalent to build-base) and other utilities
 RUN apt-get update && \
-    apt-get install -y build-essential xxd gdb && \
+    apt-get install -y build-essential xxd gdb file python3 python3-pip && \
+    pip3 install --break-system-packages pwntools && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy the C source file into the /home/ctfuser directory
@@ -15,8 +16,10 @@ COPY passcodeshell.c /home/ctfuser/passcodeshell.c
 # Compile the source file to create the binary "passcodeshell" using GNU89 standard,
 # then remove the source file for cleanliness.
 RUN gcc -std=gnu89 -o /home/ctfuser/passcodeshell /home/ctfuser/passcodeshell.c -fno-stack-protector -no-pie && \
-    chown ctfuser:ctfuser /home/ctfuser/passcodeshell && chmod 755 /home/ctfuser/passcodeshell && \
     rm -f /home/ctfuser/passcodeshell.c
+
+# Set the binary to be owned by root and set the setuid bit
+RUN chown root:root /home/ctfuser/passcodeshell && chmod 4755 /home/ctfuser/passcodeshell
 
 # Copy the MOTD file into the /opt/ctf directory (non-standard location)
 COPY motd.txt /opt/ctf/motd.txt

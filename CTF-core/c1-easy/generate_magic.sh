@@ -1,6 +1,6 @@
 #!/bin/bash
 # Define the magic word
-MAGIC_WORD="Azaroth"
+MAGIC_WORD="FLAG{NESTED_CHEESE_SECRETS}"
 
 # Generate a random number between 5 and 15 for the encoding iterations
 ENCODE_COUNT=$((RANDOM % 11 + 5))

@@ -5,7 +5,7 @@ int main(void)
 {
     char input[64];
     // Hidden password (flag) embedded in the binary.
-    char password[] = "FLAG{TRAP_CRACKED}";
+    char password[] = "FLAG{TOMS_TRAP_BROKEN}";
 
     // Noise strings to obfuscate the binary
     char noise1[] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";

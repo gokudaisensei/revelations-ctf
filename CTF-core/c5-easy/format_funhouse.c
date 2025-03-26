@@ -10,7 +10,7 @@ int main(void)
     char noise2[] = "Tom's traps are not as secure as he thinks.";
     char noise3[] = "Beware of Jerry's mischief and the hidden clues.";
 
-    char flag[] = "CTF{w3lc0m3_t0_th3_f0rm4t_funh0us3}";
+    char flag[] = "FLAG{CHEESE_CATALOG_COMPROMISED}";
 
     // Vulnerable printing: using input as format string directly.
     printf("Enter your input: ");
